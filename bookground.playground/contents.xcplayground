@@ -6,5 +6,6 @@
         <page name='Chapter 10 - Dictionaries'/>
         <page name='Chapter 11 - Sets'/>
         <page name='Chapter 12 - Functions'/>
+        <page name='Chapter 13 - Closures'/>
     </pages>
 </playground>
