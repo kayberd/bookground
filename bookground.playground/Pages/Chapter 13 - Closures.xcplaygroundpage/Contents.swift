@@ -128,3 +128,23 @@ let estimatedParticipation = passingAverages.reduce(5) { (estimationSoFar: Int, 
     return estimationSoFar + currentOrgAverage
 }
 let estimatedParticipation2 = passingAverages.reduce(0){$0 + $1}
+
+// Listing 13.20 Functions begetting functions
+func makeCharacterRemover(for character: Character) -> (String) -> String {
+    func removeFrom(_ input: String) -> String {
+        return input.filter { $0 != character }
+    }
+    return removeFrom
+}
+
+// Listing 13.21 Using the returned function
+func makeCharacterRemover2(for character: Character) -> (String) -> String {
+    func removeFrom(_ input: String) -> String {
+        return input.filter { $0 != character }
+    }
+    return removeFrom
+}
+let removeLowerCaseLs = makeCharacterRemover(for: "l")
+let strangeGreeting = removeLowerCaseLs("Hello, World!")
+let removeLowerCaseOs = makeCharacterRemover(for: "o")
+let strangerGreeting = removeLowerCaseOs(strangeGreeting)

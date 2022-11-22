@@ -7,5 +7,6 @@
         <page name='Chapter 11 - Sets'/>
         <page name='Chapter 12 - Functions'/>
         <page name='Chapter 13 - Closures'/>
+        <page name='Chapter 14 - Enumerations'/>
     </pages>
 </playground>
