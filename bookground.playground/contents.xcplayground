@@ -8,5 +8,7 @@
         <page name='Chapter 12 - Functions'/>
         <page name='Chapter 13 - Closures'/>
         <page name='Chapter 14 - Enumerations'/>
+        <page name='Chapter 15 - Structs and Classes'/>
+        <page name='Chapter 16 - Properties'/>
     </pages>
 </playground>
